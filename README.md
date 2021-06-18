@@ -35,12 +35,11 @@
 <https://app.pluralsight.com/library/courses/python-getting-started/table-of-contents> → basic python
 
 **Virtual Environment :**
-
 There is something in the Python world called a virtual environment. What is it exactly? Well, virtual environments allow you to set up independent Python environments when you're working on your Python application. Imagine you're working on a web app. The web app you're working on for your client uses Django 1. 8 even though that's not the latest version, but it is the latest long-term support release. However, you also want to have Django 1. 11 installed on your machine because you want to get your hands dirty, maybe check out that new admin interface. Either way, you cannot have both versions of Django installed on your machine. There's going to be a version conflict, so you can only have one of those twoinstalled. But what you can do is simply create two isolated Python environments. In each one of these isolated environments you can install whatever packages you want completely independent of each other, and they both live on the same machine. Heck, you can even use the different Python interpreter versions as well. On my personal machine, I have a virtualenvironment with Python 3. 6 for this course, then Python 3. 5. 1 for my personal web project because that's the Python version that my web server provider has. Then I have one for version 2. 7 and so on. It is fairly common to have many virtual environments set up on your machine, especially if you're working on multiple applications. They each have their own packages, and they don't care about each other at all. Now this may all sound silly and unnecessary to you at this point, but when you start working on an even slightly more complicated Python application, you will really appreciate the power and ease of use of virtual environments. To start using a virtual environment, you first need to install thevirtualenv package using pip. So just run pip and install virtualenv. From then on, the virtualenv command will be globally available in your terminal or PowerShell. Creating a virtual environment is super simple. Just type virtualenv and then followed by the environment name. The environment name can be whatever you want. For example, I created a virtualenv for this course called Pluralsight Getting Started. Now that's a mouthful. I usually name my virtual environments according to the project name. You can specify the Python version that you want your virtualenv to use by passing the --python flag and putting the path to your Python executable. Also, here's a tip: It's totally okay to keep all of your creative virtual environments in one folder. For example, I have a folder in my home directory called venvs. This is where all my of virtual environments live. This is perfectly fine. Finally, when you're done creating an environment, you need to activate it. When the environment was created, it created a folder with the same name as the virtual environment name and several subfolders. In order to activate the virtual environment, simply type source, then the path to your virtual environment folder, followed by the /bin/activate. If successful, your terminal or PowerShell prompt should be prefixed with the virtual environment name. Now when your virtual environment is activated, if you install packages using pip, it will only be installed to that specific virtual environment. It will not be available outside of it even in the global Python environment. Similarly, when you use the Python command directly, it will use the Python interpreter that you created for that virtual environment. To leave the virtual environment, simply type deactivate while your virtual environment is active. PyCharm is also able to work with virtual environments and can help you set them up as well. Simply search for the interpreter options in the PyCharm settings. Speaking of PyCharm, let's explore another great feature that it comes with, and that's debugging our Python code.
 
-[**https://www.pyinstaller.org/](https://www.pyinstaller.org/)**, pyinstaller** - is a Python package that allows us to create binary executable files from our Python program. It is cross-platform so it will create the. exe file for Windows and a. app file for Mac. It also works under Linux 2 and a gazillion other platforms.
+[**https://www.pyinstaller.org/](https://www.pyinstaller.org/)**, pyinstaller** - is a Python package that allows us to create binary executable files from our Python program. It is cross-platform so it will create the. exe file for Windows and a. app file for Mac. It also works under Linux 2 and a gazillion other platforms.
 
-pyinstaller --onefile ./yourpythonfile.py → this creates one single file as exe as opposed to an small exe files and other dependent files.
+pyinstaller --onefile ./yourpythonfile.py → this creates one single file as exe as opposed to an small exe files and other dependent files.
 
 **Setup Wizard**
 
@@ -66,7 +65,7 @@ def get\_lines(files):
 
 `        `for line in f:
 
-`            `#preprocess line
+`            `#preprocess line
 
 `            `yield line
 
@@ -100,8 +99,11 @@ print("end of program")
 #----------------------------------------------------
 ## **Decorators in python - allows behavior to be added to an individual [object](https://en.wikipedia.org/wiki/Object_\(computer_science\) "Object (computer science)"), dynamically,**
 ## **ref: [https://realpython.com/lessons/timing-functions-decorators/**](https://realpython.com/lessons/timing-functions-decorators/)**
+![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.001.png)
 
+![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.002.png)
 
+![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.003.png)
 
 
 ### **Elapsed time**
@@ -111,13 +113,7 @@ start\_time = time.perf\_counter()
 
 end\_time = time.perf\_counter()
 
-
-
-
 runt\_time= end\_time - start\_time
-
-
-
 
 print(f"Time elapsed  {end\_time:.4f} secs")
 ## **Yield and for loop**
@@ -330,3 +326,7 @@ pip install --trusted-host [pypi.org](http://pypi.org) python-lambda-local
 [**Python Elasticbeanstalk support multiple request with PyFlask**](https://forums.aws.amazon.com/thread.jspa?threadID=232777)
 
 [**Python and multithreading**](https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python)
+
+
+
+
