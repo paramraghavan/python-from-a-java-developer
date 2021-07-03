@@ -329,6 +329,7 @@ pip install --trusted-host [pypi.org](http://pypi.org) python-lambda-local
 
 [**Python and multithreading**](https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python)
 
-
+# Shallow vs deepcopy
+https://thispointer.com/python-how-to-copy-a-dictionary-shallow-copy-vs-deep-copy/
 
 
