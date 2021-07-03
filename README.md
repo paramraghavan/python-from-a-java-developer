@@ -1,10 +1,10 @@
-﻿# **Python from a Java Developers**
+# **Python from a Java Developer**
 ## **Useful Links**
 [**Python for Java developers**](https://lobster1234.github.io/2017/05/25/python-java-primer/)
 
 **Global Variables**
 
-- https://www.w3schools.com/python/python\_variables\_global.asp
+- https://www.w3schools.com/python/python_variables_global.asp
 
 [Learn Python](http://learnpython.org/)
 
