@@ -325,6 +325,8 @@ pip install --trusted-host [pypi.org](http://pypi.org) python-lambda-local
 
 [**Python Elasticbeanstalk support multiple request with PyFlask**](https://forums.aws.amazon.com/thread.jspa?threadID=232777)
 
+[**Queue and Python**](https://www.geeksforgeeks.org/queue-in-python/)
+
 [**Python and multithreading**](https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python)
 
 
