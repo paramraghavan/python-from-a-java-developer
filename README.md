@@ -47,7 +47,7 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
 
 [@staticmethod](https://stackabuse.com/pythons-classmethod-and-staticmethod-explained/)
 
-[i](https://pymotw.com/3/importlib/)[mportlib - import modules dynamically](https://pymotw.com/3/importlib/)
+[i](https://pymotw.com/3/importlib/)[mportlib - import modules dynamically](https://pymotw.com/3/importlib/) - importlib like classForName in java ?
 ### **Dump - print all the attributes of an object/class**
 <pre>
     def dump(obj):
