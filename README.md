@@ -47,7 +47,28 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
 
 [@staticmethod](https://stackabuse.com/pythons-classmethod-and-staticmethod-explained/)
 
-[i](https://pymotw.com/3/importlib/)[mportlib - import modules dynamically](https://pymotw.com/3/importlib/) - importlib like classForName in java ?
+[i](https://pymotw.com/3/importlib/)[mportlib - import modules dynamically](https://pymotw.com/3/importlib/) - importlib is kind of Class.forName() in java
+<pre>
+  def get_class( kls ):
+  	parts = kls.split('.')
+  	module = ".".join(parts[:-1])
+  	m = __import__( module )
+  	for comp in parts[1:]:
+  	m = getattr(m, comp)            
+  	return m
+  	
+  >>> D = get_class("datetime.datetime")
+  >>> D
+  <type 'datetime.datetime'>
+  >>> D.now()
+  datetime.datetime(2009, 1, 17, 2, 15, 58, 883000)
+  >>> a = D( 2010, 4, 22 )
+  >>> a
+  datetime.datetime(2010, 4, 22, 0, 0)
+  >>> 
+</pre>
+
+ref: https://stackoverflow.com/questions/452969/does-python-have-an-equivalent-to-java-class-forname
 ### **Dump - print all the attributes of an object/class**
 <pre>
     def dump(obj):
