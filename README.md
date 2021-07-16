@@ -79,22 +79,23 @@ but I save a lot of memory usage.
 
 **ref:** <https://stackoverflow.com/questions/7883962/where-to-use-yield-in-python-best>
 ## **Print stack trace**
-import traceback 
-
-\# declaring and assigning array 
-A = [1, 2, 3, 4]   
-\# exception handling 
-try: 
-`    `value = A[5]       
-except: 
-`    `# printing stack trace 
-`    `traceback.print\_exc()
-
-\# out of try-except 
-\# this statement is to show 
-\# that program continues normally 
-\# after an exception is handled 
+<pre>
+    import traceback 
+      
+    # declaring and assigning array 
+    A = [1, 2, 3, 4]   
+    # exception handling 
+    try: 
+        value = A[5]       
+    except: 
+        # printing stack trace 
+        traceback.print_exc()
+    # out of try-except 
+    # this statement is to show 
+    # that program continues normally 
+    # after an exception is handled 
 print("end of program")
+</pre>
 
 #----------------------------------------------------
 ## **Decorators in python - allows behavior to be added to an individual [object](https://en.wikipedia.org/wiki/Object_\(computer_science\) "Object (computer science)"), dynamically,**
@@ -133,80 +134,44 @@ Tuple - immutable list. Example tuple = (3,5,6, "abc")
 
 \*\*kwargs
 
+<pre>
+    def call():
+        raise ValueError('record count failed to match')
+        return
+    
+    try:
+        call()	
+    except ValueError as identifier:
+        print(identifier) # prints the error message 'record count failed to match'
+    
+    
+    #The repr() function returns a printable representation of the given object.
+    msg = {'x':1,'y':2}
+    print(repr(msg))
+    output on console: "{'x': 1, 'y': 2}"
+    
+    
+    # in the folloiwng case, The type(object) function returns the type of the object.
+    # It could return a new type object based on the arguments passed
+    print(type(msg))
+    output on console: <class 'dict'>
+    
+    #python dictionaries are key value pairs like  Hashmap in java, but can support mixed data types unlike java
+    # dict. to json and back
+    student = {
+        "name": "MArk",
+        "rollnumber":123,
+        "school": "python school"
+        "misc": None,
+         "msgdict": msg
+    }
+    
+    student["name"] == "MArk"
+    student.get("last_name") == KeyError
+    student.get("last_name", "Unknown") == "Unknown"
+    student.keys()
 
-
-def call():
-
-`        `raise ValueError('record count failed to match')
-
-`        `return
-
-
-
-try:
-
-`        `call()  
-
-except ValueError as identifier:
-
-`    `print(identifier) # prints the error message 'record count failed to match'
-
-
-
-
-
-#The repr() function returns a printable representation of the given object.
-
-msg = {'x':1,'y':2}
-
-print(repr(msg))
-
-output on console: "{'x': 1, 'y': 2}"
-
-
-
-
-
-\# in the folloiwng case, The type(object) function returns the type of the object.
-
-\# It could return a new type object based on the arguments passed
-
-print(type(msg))
-
-output on console: <class 'dict'>
-
-
-
-#python dictionaries are key value pairs like  Hashmap in java, but can support mixed data types unlike java
-
-\# dict. to json and back
-
-student = {
-
-`        `"name": "MArk",
-
-`        `"rollnumber":123,
-
-`        `"school": "python school"
-
-`        `"misc": None,
-
-`     `"msgdict": msg
-
-}
-
-
-
-student["name"] == "MArk"
-
-student.get("last\_name") == KeyError
-
-student.get("last\_name", "Unknown") == "Unknown"
-
-student.keys()
-
-student.values()
-
+</pre>
 
 ### **Classes** 
 Inheritance and Compostion → <https://realpython.com/lessons/inheritance-composition-python-overview/>
