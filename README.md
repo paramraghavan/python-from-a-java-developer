@@ -179,107 +179,59 @@ Inheritance and Compostion → <https://realpython.com/lessons/inheritance-com
 <https://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>
 
 #studentpy
-
-students = []
-
-class Student:
-
-`        `school\_name = "Springfield Elementary"
-
-
-
-`        `def \_\_init\_\_(self, name, student\_id=332):
-
-`               `self.name = name
-
-`               `self.student\_id = student\_id
-
-`               `students.append(self)
-
-
-
-`        `def \_\_str\_\_(self):
-
-`               `return "Student " + self.name
-
-
-
-`        `def get\_name\_capitalize(self):
-
-`               `return self.name.capitalize()
-
-
-
-`        `def get\_school\_name(self):
-
-`               `return self.school\_name
-
-
-
-
-
-mark = Student("Mark")
-
-print(mark);
-
-
-
-
-
-\---------------
-
-#highschoolstudent.py
-
-
-
-
-
-from student import Student
-
-
-
-\# Student base class and HighSchoolStudent childor derived class
-
-class HighSchoolStudent(Student):
-
-
-
-`        `school\_name = "Springfield High School"
-
-
-
-`        `def get\_school\_name(self):
-
-`               `return "This is a High School student"
-
-
-
-`        `def get\_name\_capitalize(self):
-
-`               `original\_value = super().get\_name\_capitalize()
-
-`               `return original\_value + "-HS"
-
-
-
-
-
-#main.py
-
-from hs\_student import \*
-
-
-
-james = HighSchoolStudent("james")
-
-print(james.get\_name\_capitalize())
-
-
-
-
-
-output to console: James-HS
-
+<pre>
+    students = []
+    class Student:
+        school_name = "Springfield Elementary"
+    
+        def __init__(self, name, student_id=332):
+            self.name = name
+            self.student_id = student_id
+            students.append(self)
+    
+        def __str__(self):
+            return "Student " + self.name
+    
+        def get_name_capitalize(self):
+            return self.name.capitalize()
+    
+        def get_school_name(self):
+            return self.school_name
+    
+    
+    mark = Student("Mark")
+    print(mark);
+    
+    
+    ---------------
+    #highschoolstudent.py
+    
+    
+    from student import Student
+    
+    # Student base class and HighSchoolStudent childor derived class
+    class HighSchoolStudent(Student):
+    
+        school_name = "Springfield High School"
+    
+        def get_school_name(self):
+            return "This is a High School student"
+    
+        def get_name_capitalize(self):
+            original_value = super().get_name_capitalize()
+            return original_value + "-HS"
+    
+    
+    #main.py
+    from hs_student import *
+    
+    james = HighSchoolStudent("james")
+    print(james.get_name_capitalize())
+    
+    
+    output to console: James-HS
+
+</pre>
 
 ## **Unit test python**
 <https://medium.com/@bezdelev/how-to-test-a-python-aws-lambda-function-locally-with-pycharm-run-configurations-6de8efc4b206> - won't work for us
