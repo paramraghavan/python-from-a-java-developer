@@ -94,6 +94,8 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
 ## A **decorator** is a design pattern  that allows a user to add new functionality to an existing object without modifying its structure. 
 - [decorators link1](https://realpython.com/lessons/timing-functions-decorators/)
 - [decorators link2](https://www.datacamp.com/community/tutorials/decorators-python)
+
+
 ![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.001.png)
 
 ![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.002.png)
