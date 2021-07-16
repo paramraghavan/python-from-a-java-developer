@@ -57,17 +57,19 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
 
 ### **Yield - use case process large file without reading the entire file at once**
 <pre>
-	yield is best used when you have a function that returns a sequence and you want to iterate over that sequence, but you do not need to have every value in memory at once.
-	For example, I have a python script that parses a large list of CSV files, and I want to return each line to be processed in another function. I don't want to store the megabytes of data in memory all at once, so I yield each line in a python data structure. So the function to get lines from the file might look something like:
+	#yield is best used when you have a function that returns a sequence and you want to iterate over that sequence, but you do not need to have every value in memory at once.
+	#For example, I have a python script that parses a large list of CSV files, and I want to return each line to be processed in another function. I don't want to store the megabytes of data in memory all at once, so I yield each line in a python data structure. So the function to get lines from the file might look something like:
 	def get_lines(files):
 		for f in files:
 			for line in f:
 				#preprocess line
 				yield line
-	I can then use the same syntax as with lists to access the output of this function:
+				
+				
+	#I can then use the same syntax as with lists to access the output of this function:
 	for line in get_lines(files):
 		#process line
-	but u save a lot of memory usage.
+	#but u save a lot of memory usage.
 </pre>
 **ref:** <https://stackoverflow.com/questions/7883962/where-to-use-yield-in-python-best>
 ## **Print stack trace**
