@@ -47,7 +47,7 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
 
 [@staticmethod](https://stackabuse.com/pythons-classmethod-and-staticmethod-explained/)
 
-[i](https://pymotw.com/3/importlib/)[mportlib - import modules dynamically](https://pymotw.com/3/importlib/) - importlib is kind of Class.forName() in java
+[importlib - import modules dynamically](https://pymotw.com/3/importlib/) - importlib is kind of Class.forName() in java.
 <pre>
   def get_class( kls ):
   	parts = kls.split('.')
@@ -115,6 +115,7 @@ ref: https://stackoverflow.com/questions/452969/does-python-have-an-equivalent-t
 ## A **decorator** is a design pattern  that allows a user to add new functionality to an existing object without modifying its structure. 
 - [decorators link1](https://realpython.com/lessons/timing-functions-decorators/)
 - [decorators link2](https://www.datacamp.com/community/tutorials/decorators-python)
+- [@see code sample](https://github.com/paramraghavan/python-from-a-java-developer/blob/main/src/decorators/sample.py)
 
 
 ![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.001.png)
