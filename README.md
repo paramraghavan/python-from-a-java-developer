@@ -88,20 +88,18 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
     # this statement is to show 
     # that program continues normally 
     # after an exception is handled 
-print("end of program")
+    print("end of program")
 </pre>
 
-#----------------------------------------------------
-## A decorator is a design pattern  that allows a user to add new functionality to an existing object without modifying its structure.
-## **Decorators in python - allows behavior to be added to an individual [object](https://en.wikipedia.org/wiki/Object_\(computer_science\) "Object (computer science)"), dynamically,**
-## **ref: [https://realpython.com/lessons/timing-functions-decorators/**](https://realpython.com/lessons/timing-functions-decorators/)**
+## A **decorator** is a design pattern  that allows a user to add new functionality to an existing object without modifying its structure. 
+- [decorators link1](https://realpython.com/lessons/timing-functions-decorators/)
+- [decorator link2]( [decorators](https://www.datacamp.com/community/tutorials/decorators-python), see example under package decorators)
 ![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.001.png)
 
 ![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.002.png)
 
 ![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.003.png)
 
-## [decorators](https://www.datacamp.com/community/tutorials/decorators-python), see example under package decorators
 
 ### **Elapsed time**
 import time
