@@ -106,6 +106,7 @@ print("end of program")
 
 ![](Aspose.Words.ca4ec84a-843e-4a78-b41f-95b43759fab0.003.png)
 
+## [decorators](https://www.datacamp.com/community/tutorials/decorators-python), see example under package decorators
 
 ### **Elapsed time**
 import time
