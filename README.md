@@ -272,6 +272,27 @@ Inheritance and Compostion → <https://realpython.com/lessons/inheritance-com
 
 </pre>
 
+## instanceOf <> isInstance check
+
+age = isinstance(51,int)
+print("age is an integer:", age)
+>Output: age is an integer: True
+
+pi = isinstance(3.14,float)
+print("pi is a float:", pi)
+>Output: pi is a float: True
+
+message = isinstance("Hello World",str)
+print("message is a string:", message)
+>Output: message is a string: True
+
+my_dict = isinstance({"A":"a", "B":"b", "C":"c", "D":"d"},dict)
+print("my_dict is a dict:", my_dict)
+>Output: my_dict is a dict: True
+
+**Refrence**: https://www.guru99.com/type-isinstance-python.html#8
+
+
 ## **Unit test python**
 <https://medium.com/@bezdelev/how-to-test-a-python-aws-lambda-function-locally-with-pycharm-run-configurations-6de8efc4b206> - won't work for us
 
