@@ -290,8 +290,21 @@ my_dict = isinstance({"A":"a", "B":"b", "C":"c", "D":"d"},dict)
 print("my_dict is a dict:", my_dict)
 >Output: my_dict is a dict: True
 
-**Refrence**: https://www.guru99.com/type-isinstance-python.html#8
+**Reference**: https://www.guru99.com/type-isinstance-python.html#8
 
+Python for each
+---------------
+- https://stackoverflow.com/questions/47304818/pyspark-foreach-with-arguments
+<pre>
+def f(x,arg1,arg2,arg3): 
+    print(x*arg1+arg2+arg3)
+
+from functools import partial
+
+sc.parallelize([1, 2, 3, 4, 5]).foreach(
+    partial(f, arg1=11, arg2=21, arg3=31)
+ )
+</pre>
 
 ## **Unit test python**
 <https://medium.com/@bezdelev/how-to-test-a-python-aws-lambda-function-locally-with-pycharm-run-configurations-6de8efc4b206> - won't work for us
