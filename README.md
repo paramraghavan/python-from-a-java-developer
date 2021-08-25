@@ -54,7 +54,7 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
   	module = ".".join(parts[:-1])
   	m = __import__( module )
   	for comp in parts[1:]:
-  	m = getattr(m, comp)            
+  	  m = getattr(m, comp)            
   	return m
   	
   >>> D = get_class("datetime.datetime")
@@ -79,7 +79,7 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
   
   Say for example, if you class name is foo.baz.bar.Model then we do this:
   
-  m = __import__( "foo.baz.bar" ) #m is package foo
+  m = __import__( "foo" ) #m is package foo
   m = getattr( m, "baz" ) #m is package baz
   m = getattr( m, "bar" ) #m is module bar
   m = getattr( m, "Model" ) #m is class Model
@@ -133,7 +133,8 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
     print("end of program")
 </pre>
 
-## A **decorator** is a design pattern  that allows a user to add new functionality to an existing object without modifying its structure. 
+A **decorator** is a design pattern  that allows a user to add new functionality to an existing object without modifying its structure. 
+----------------------------------------------------------------------------------------------------------------------------------------
 - [decorators link1](https://realpython.com/lessons/timing-functions-decorators/)
 - [decorators link2](https://www.datacamp.com/community/tutorials/decorators-python)
 - [@see code sample](https://github.com/paramraghavan/python-from-a-java-developer/blob/main/src/decorators/sample.py)
@@ -156,6 +157,9 @@ end\_time = time.perf\_counter()
 runt\_time= end\_time - start\_time
 
 print(f"Time elapsed  {end\_time:.4f} secs")
+
+ref: https://www.geeksforgeeks.org/timing-functions-with-decorators-python/
+
 ## **Yield and for loop**
 pass keyword - kind of no-op operation
 ## **Exception**
@@ -270,6 +274,40 @@ Inheritance and Compostion → <https://realpython.com/lessons/inheritance-com
     
     output to console: James-HS
 
+</pre>
+
+## instanceOf <> isInstance check
+
+age = isinstance(51,int)
+print("age is an integer:", age)
+>Output: age is an integer: True
+
+pi = isinstance(3.14,float)
+print("pi is a float:", pi)
+>Output: pi is a float: True
+
+message = isinstance("Hello World",str)
+print("message is a string:", message)
+>Output: message is a string: True
+
+my_dict = isinstance({"A":"a", "B":"b", "C":"c", "D":"d"},dict)
+print("my_dict is a dict:", my_dict)
+>Output: my_dict is a dict: True
+
+**Reference**: https://www.guru99.com/type-isinstance-python.html#8
+
+Python for each
+---------------
+- https://stackoverflow.com/questions/47304818/pyspark-foreach-with-arguments
+<pre>
+def f(x,arg1,arg2,arg3): 
+    print(x*arg1+arg2+arg3)
+
+from functools import partial
+
+sc.parallelize([1, 2, 3, 4, 5]).foreach(
+    partial(f, arg1=11, arg2=21, arg3=31)
+ )
 </pre>
 
 ## **Unit test python**
