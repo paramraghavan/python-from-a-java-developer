@@ -54,7 +54,7 @@ pyinstaller --onefile ./yourpythonfile.py → this creates one single file as ex
   	module = ".".join(parts[:-1])
   	m = __import__( module )
   	for comp in parts[1:]:
-  	m = getattr(m, comp)            
+  	  m = getattr(m, comp)            
   	return m
   	
   >>> D = get_class("datetime.datetime")
