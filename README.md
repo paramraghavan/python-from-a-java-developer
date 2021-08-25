@@ -216,6 +216,8 @@ Tuple - immutable list. Example tuple = (3,5,6, "abc")
 
 </pre>
 
+[Python Exception Hierarchy](https://github.com/Akuli/python-tutorial/blob/master/basics/exceptions.md)
+
 ### **Classes** 
 Inheritance and Compostion → <https://realpython.com/lessons/inheritance-composition-python-overview/>
 
