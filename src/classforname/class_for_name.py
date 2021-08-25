@@ -13,7 +13,7 @@ To get from the top level module to the class, have to recursively use gettatr o
 
 Say for example, if you class name is foo.baz.bar.Model then we do this:
 
-m = __import__( "foo.baz.bar" ) #m is package foo
+m = __import__( "foo" ) #m is package foo
 m = getattr( m, "baz" ) #m is package baz
 m = getattr( m, "bar" ) #m is module bar
 m = getattr( m, "Model" ) #m is class Model
