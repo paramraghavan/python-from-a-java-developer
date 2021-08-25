@@ -42,7 +42,7 @@ dictionary didn’t changed the original dictionary contents. Then how it is sha
 
 '''
 The word Shallow copy comes in picture when there is some object in dictionary like list 
-or user define objects instead of primitive datatypes.
+or user define objects instead of primitive datatypes - string, int, float, the usual suspects.
 
 Now let’s modify the value of key that contains list as value i.e.
 '''

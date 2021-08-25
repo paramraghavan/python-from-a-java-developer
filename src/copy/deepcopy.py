@@ -9,7 +9,7 @@ wordsDict = {
 
 import copy
 
-#Let’s create a deep copy of this dictionary,
+# Let’s create a deep copy of this dictionary,
 # Create a deep copy of the dictionary
 otherDict = copy.deepcopy(wordsDict)
 
