@@ -317,12 +317,6 @@ sc.parallelize([1, 2, 3, 4, 5]).foreach(
 
 pip install --trusted-host [pypi.org](http://pypi.org) python-lambda-local
 
-## dir()
-dir() is a  inbuilt function in Python3, which returns list of the attributes and methods of any object (say functions , modules, strings, lists, dictionaries etc.)
-example print(dir(random))
-ref: https://www.geeksforgeeks.org/python-dir-function/
-
-
 
 [**Python Elasticbeanstalk support multiple request with PyFlask**](https://forums.aws.amazon.com/thread.jspa?threadID=232777)
 
@@ -330,7 +324,13 @@ ref: https://www.geeksforgeeks.org/python-dir-function/
 
 [**Python and multithreading**](https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python)
 
-# Shallow vs deepcopy
+## Shallow vs deepcopy
 https://thispointer.com/python-how-to-copy-a-dictionary-shallow-copy-vs-deep-copy/
+
+
+## dir()
+dir() is a  inbuilt function in Python3, which returns list of the attributes and methods of any object (say functions , modules, strings, lists, dictionaries etc.)
+example print(dir(random))
+ref: https://www.geeksforgeeks.org/python-dir-function/
 
 
