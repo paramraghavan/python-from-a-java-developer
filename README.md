@@ -317,6 +317,11 @@ sc.parallelize([1, 2, 3, 4, 5]).foreach(
 
 pip install --trusted-host [pypi.org](http://pypi.org) python-lambda-local
 
+## dir()
+dir() is a  inbuilt function in Python3, which returns list of the attributes and methods of any object (say functions , modules, strings, lists, dictionaries etc.)
+example print(dir(random))
+ref: https://www.geeksforgeeks.org/python-dir-function/
+
 
 
 [**Python Elasticbeanstalk support multiple request with PyFlask**](https://forums.aws.amazon.com/thread.jspa?threadID=232777)
