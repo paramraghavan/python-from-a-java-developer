@@ -216,6 +216,8 @@ Tuple - immutable list. Example tuple = (3,5,6, "abc")
 
 </pre>
 
+[Python Exception Hierarchy](https://github.com/Akuli/python-tutorial/blob/master/basics/exceptions.md)
+
 ### **Classes** 
 Inheritance and Compostion → <https://realpython.com/lessons/inheritance-composition-python-overview/>
 
@@ -316,14 +318,19 @@ sc.parallelize([1, 2, 3, 4, 5]).foreach(
 pip install --trusted-host [pypi.org](http://pypi.org) python-lambda-local
 
 
-
 [**Python Elasticbeanstalk support multiple request with PyFlask**](https://forums.aws.amazon.com/thread.jspa?threadID=232777)
 
 [**Queue and Python**](https://www.geeksforgeeks.org/queue-in-python/)
 
 [**Python and multithreading**](https://www.toptal.com/python/beginners-guide-to-concurrency-and-parallelism-in-python)
 
-# Shallow vs deepcopy
+## Shallow vs deepcopy
 https://thispointer.com/python-how-to-copy-a-dictionary-shallow-copy-vs-deep-copy/
+
+
+## dir()
+dir() is a  inbuilt function in Python3, which returns list of the attributes and methods of any object (say functions , modules, strings, lists, dictionaries etc.)
+example print(dir(random))
+ref: https://www.geeksforgeeks.org/python-dir-function/
 
 
